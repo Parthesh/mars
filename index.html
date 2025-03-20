@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars 3D Visualization</title>
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.104/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div id="cesiumContainer"></div>
+    <div id="toolbar">
+        <div class="title">Mars 3D Visualization</div>
+        <div class="section">
+            <h3>Imagery Layers</h3>
+            <div>
+                <input type="checkbox" id="themisLayer" checked>
+                <label for="themisLayer">THEMIS Global Imagery</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ctxLayer" checked>
+                <label for="ctxLayer">CTX Medium Resolution</label>
+            </div>
+            <div>
+                <input type="checkbox" id="hiriseLayer" checked>
+                <label for="hiriseLayer">HiRISE High Resolution</label>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Points of Interest</h3>
+            <select id="poiSelector">
+                <option value="">Select a location...</option>
+                <option value="curiosity">Curiosity Rover (Gale Crater)</option>
+                <option value="perseverance">Perseverance Rover (Jezero Crater)</option>
+                <option value="insight">InSight Lander (Elysium Planitia)</option>
+                <option value="olympus">Olympus Mons</option>
+                <option value="valles">Valles Marineris</option>
+            </select>
+        </div>
+        <div class="section">
+            <h3>Information</h3>
+            <div id="infoPanel">
+                <p>Welcome to the Mars 3D Visualization application. This interactive globe uses high-resolution terrain and imagery data to provide an immersive exploration experience of the Martian surface.</p>
+                <p>Use your mouse to navigate:</p>
+                <ul>
+                    <li>Left click + drag: Rotate</li>
+                    <li>Right click + drag: Zoom</li>
+                    <li>Middle click + drag: Pan</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.104/Build/Cesium/Cesium.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
