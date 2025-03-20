@@ -1,5 +1,5 @@
 // Initialize Cesium access token (not required when using the CDN version, but good practice)
-// Cesium.Ion.defaultAccessToken = 'your_access_token_here';
+Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0ZTZhNGRkZS1kZDg2LTRlZTctOTAwOS0wMTk3YmEyM2I2YjAiLCJpZCI6MjIyNDAsInNjb3BlcyI6WyJhc3IiLCJnYyJdLCJpYXQiOjE1ODE1ODM2ODN9.iH21fRfhwcJ4HyUx2y_b1K2lh04-WiQdhmXewqVayGY';
 
 // Define Mars ellipsoid (different from Earth's default in Cesium)
 const ellipsoidMars = new Cesium.Ellipsoid(3376200, 3376200, 3376200);
